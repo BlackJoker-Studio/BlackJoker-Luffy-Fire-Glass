@@ -1,87 +1,57 @@
 # 🏴‍☠️ BlackJoker Luffy Fire Glass
 
-**A little fire for your Discord. 🔥**
+![BetterDiscord](https://img.shields.io/badge/BetterDiscord-Theme-5865F2?style=flat-square) ![Version](https://img.shields.io/badge/version-1.2.1-E54835?style=flat-square) ![CSS](https://img.shields.io/badge/CSS-only-222?style=flat-square)
 
-A custom BetterDiscord theme inspired by One Piece, built around dark glass panels, deep red colors and a wallpaper-focused layout.
+A pirate-inspired theme for BetterDiscord, with red highlights and translucent panels that leave room for your own wallpaper. 🔥
 
-No boring flat backgrounds. Just your favorite wallpaper, a clean interface and a bit of pirate energy. ☠️
+## ✨ Features
 
-![Version](https://img.shields.io/badge/version-1.2.0-red?style=for-the-badge)
-![BetterDiscord](https://img.shields.io/badge/BetterDiscord-Theme-5865F2?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-active-brightgreen?style=for-the-badge)
-
----
-
-## 🔥 Features
-
-- 🏴‍☠️ **Wallpaper Support** — Use your own background image.
-- 🖤 **Dark Glass UI** — Transparent panels with a dark finish.
-- 🔥 **Fire Red Accents** — Red highlights across Discord.
-- ✨ **Hover Effects** — Subtle effects for buttons and channels.
-- 💬 **Custom Chat Styling** — A cleaner look for your conversations.
-- 🎨 **Personalization** — Adjust colors, transparency and more.
-- ⚡ **Lightweight** — CSS only, no additional plugins required.
+- 🖤 Dark glass channel, chat and member panels
+- 🔥 Red accents and selected-channel highlights
+- 🖼️ Custom wallpaper setting
+- 💬 Transparent chat view with darker controls for legibility
+- ⚡ Pure CSS; no additional plugin dependencies
 
 ## 📸 Preview
 
-*Screenshots coming soon.*
-
-See how the theme looks with your favorite wallpaper!
+Add a screenshot under `screenshots/` and link it here. Screenshots should not be assumed to be included in the theme package.
 
 ## 📥 Installation
 
 1. Install [BetterDiscord](https://betterdiscord.app/).
-2. Download `BlackJoker-Luffy-Fire-Glass.theme.css`.
-3. Open Discord.
-4. Go to **Settings → BetterDiscord → Themes**.
-5. Click **Open Themes Folder**.
-6. Move the downloaded theme file into the folder.
-7. Enable the theme.
+2. Download [`BlackJoker-Luffy-Fire-Glass.theme.css`](./BlackJoker-Luffy-Fire-Glass.theme.css).
+3. Open **Discord → Settings → BetterDiscord → Themes → Open Themes Folder**.
+4. Copy the `.theme.css` file into that folder and enable it.
+5. Disable conflicting Custom CSS if colors or transparency look wrong.
 
-**Done! Enjoy your new Discord look. 🔥**
+## 🖼️ Use your own wallpaper
 
-## 🎨 Customization
+Open the `.theme.css` file in a text editor. Near the top, look for:
 
-Want to change the colors or wallpaper?
+```css
+--bj-wallpaper: linear-gradient(125deg, #09070c 0%, #300609 47%, #611809 72%, #120911 100%);
+```
 
-Open the theme file with a text editor and find the configuration section.
+Replace that entire declaration with a link to an image **you have permission to use**:
 
-You can customize:
+```css
+--bj-wallpaper: url("https://example.com/your-wallpaper.jpg");
+```
 
-- 🔥 Accent colors
-- 🖼️ Wallpaper
-- 🖤 Background transparency
-- ✨ Glass blur
-- 🎭 Panel appearance
+The default is a dark red gradient so the theme works without an external image. Some image hosts block hotlinking; use a reliable direct HTTPS image URL. Local `file:///` images may be blocked in Discord.
 
-> 💡 Tip: Darker wallpapers usually work best for readability.
+For personal use, you can also locally embed an image as a data URI, but do not commit copyrighted artwork to this repository without permission.
 
-## ⚠️ Known Issues
+## 🎨 Other settings
 
-- Discord updates may occasionally break some CSS selectors.
-- Other themes or Custom CSS rules may conflict.
-- Some backgrounds can make messages harder to read.
+In `:root` you can adjust `--bj-fire`, `--bj-border`, `--bj-pane`, and `--bj-pane-strong` for the colors and opacity.
 
-Found an issue? Open a GitHub issue and include a screenshot if possible.
+## 🛠️ Notes
 
-## 🛠️ Development
+- Discord updates can break theme selectors. Report rendering bugs under **Issues** and include your BetterDiscord/Discord version.
+- The theme is unofficial and not affiliated with Discord, BetterDiscord, or One Piece rights holders.
+- **No One Piece artwork is bundled in this release.**
 
-This theme is built using CSS and is designed for BetterDiscord.
+## 💜 Credits
 
-Contributions, bug reports and suggestions are welcome.
-
-## 📜 Disclaimer
-
-This is an unofficial BetterDiscord theme.
-
-Not affiliated with Discord, BetterDiscord, Toei Animation or the creators of One Piece.
-
-One Piece and its characters belong to their respective rights holders. No copyrighted wallpaper is included in the public repository.
-
----
-
-### 💜 BlackJoker Studio
-
-**Built for people who like making Discord their own.**
-
-*Made with ☕, CSS and a little pirate energy. 🏴‍☠️*
+Made by **BlackJoker Studio**.
